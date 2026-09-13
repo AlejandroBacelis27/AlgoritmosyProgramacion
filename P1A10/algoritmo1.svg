@@ -1,0 +1,28 @@
+// Se desea obtener una tabla con las depreciaciones acumuladas y los valores reales de cada año, de un
+//automóvil comprado por 20.000 euros en el año 2005, durante los seis años siguientes suponiendo un
+//valor de recuperación o rescate de 2.000. Realizar el análisis del problema, conociendo la fórmula de la
+//depreciación anual constante D para cada año de vida útil
+// Alejandro Bacelis
+Algoritmo Tabla_depreciacion
+	definir coste, vidaUtil, valorRescate, Año, valorActual, acumulada Como Entero
+	definir Depreciacion Como Real
+	
+	Escribir "Ingrese el coste: "
+	leer coste
+	Escribir "Ingrese la vida util: "
+	leer vidaUtil
+	escribir "Ingrese el valor del rescate: "
+	leer valorRescate
+	
+	valorActual <- coste
+	Depreciacion <- (coste-valorRescate)/vidaUtil
+	acumulada <- 0
+	
+	Mientras  Año < vidaUtil Hacer
+		acumulada <- acumulada + Depreciacion
+		valorActual <- valorActual + Depreciacion
+		Año <- Año + 1
+	FinMientras
+	
+	
+FinAlgoritmo
