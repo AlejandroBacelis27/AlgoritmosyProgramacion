@@ -1,0 +1,19 @@
+#Alejandro Bacelis Eguiza
+
+print("de cuanto es el total de tu compra?")
+comp = int(input())
+if comp >= 500000:
+    comp = comp * .7
+    print(comp)
+elif comp >= 400000:
+    comp = comp * .85
+    print(comp)
+elif comp >= 30000:
+    comp = comp * .80
+    print(comp)
+elif comp >= 20000:
+    comp = comp * .85
+    print(comp)
+else:
+    comp = comp * .85
+    print(comp)
